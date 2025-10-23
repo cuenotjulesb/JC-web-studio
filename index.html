@@ -1,163 +1,212 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JC Web Studio - Création de sites web professionnels</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Web Studio - Création de sites web professionnels</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body class="font-sans bg-white text-gray-800">
-    <custom-navbar></custom-navbar>
+  <custom-navbar></custom-navbar>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4 md:px-0">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ton business mérite un vrai site, pas un simple lien.</h1>
-                <p class="text-xl mb-8">Des sites rapides, modernes et abordables, livrés en quelques jours.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition">Demander un devis gratuit</a>
-                    <a href="#portfolio" class="border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-lg font-medium text-center transition">Voir nos réalisations</a>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/ChatGPT%20Image%2021%20oct.%202025%2C%2016_18_16.png" 
-                     alt="JC Web Studio" 
-                     class="w-full max-w-md rounded-xl shadow-xl transform hover:scale-105 transition-transform">
-            </div>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Ton business mérite un vrai site, pas un simple lien.
+        </h1>
+        <p class="text-xl mb-8">Des sites rapides, modernes et abordables, livrés en quelques jours.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact"
+            class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition">Demander
+            un devis gratuit</a>
+          <a href="#portfolio"
+            class="border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-lg font-medium text-center transition">Voir
+            nos réalisations</a>
         </div>
-    </section>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/ChatGPT%20Image%2021%20oct.%202025%2C%2016_18_16.png"
+          alt="JC Web Studio"
+          class="w-full max-w-md rounded-xl shadow-xl transform hover:scale-105 transition-transform" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-12 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-feather="layout" class="text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Sites Vitrine</h3>
-                    <p class="text-gray-600">Présentez votre activité avec élégance. Idéal pour artisans et petites entreprises.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-feather="calendar" class="text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Réservation en ligne</h3>
-                    <p class="text-gray-600">Permettez à vos clients de prendre rendez-vous directement sur votre site.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-feather="edit" class="text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Sites sur mesure</h3>
-                    <p class="text-gray-600">Des solutions personnalisées adaptées à vos besoins spécifiques.</p>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="py-12 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-feather="layout" class="text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Sites Vitrine</h3>
+          <p class="text-gray-600">Présentez votre activité avec élégance. Idéal pour artisans et petites entreprises.</p>
         </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-12 bg-gray-50 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">Nos formules de création de site web</h2>
-            <p class="text-xl text-center text-gray-600 mb-12">Choisissez la formule qui correspond à vos besoins et bénéficiez d'un site moderne, rapide et personnalisé.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <!-- Formule Premium -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent transform scale-105 relative">
-                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg font-medium">Populaire</div>
-                    <h3 class="text-2xl font-bold mb-2">Formule Premium</h3>
-                    <p class="text-gray-600 mb-4">Le site professionnel haut de gamme</p>
-                    <p class="text-4xl font-bold mb-6">200€</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>5 pages ou plus</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Système de réservation avancé</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation SEO basique</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Configuration du domaine</span></li>
-                    </ul>
-                    <a href="offre-premium.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
-                </div>
-
-                <!-- Formule Pro -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
-                    <h3 class="text-2xl font-bold mb-2">Formule Pro</h3>
-                    <p class="text-gray-600 mb-4">Le site complet et évolutif pour professionnels</p>
-                    <p class="text-4xl font-bold mb-6">150€</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Jusqu'à 3 pages</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Mise en page dynamique</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Formulaire de réservation</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation SEO</span></li>
-                    </ul>
-                    <a href="offre-pro.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
-                </div>
-
-                <!-- Formule Essentiel -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
-                    <h3 class="text-2xl font-bold mb-2">Formule Essentiel</h3>
-                    <p class="text-gray-600 mb-4">Le site simple et efficace pour une présence rapide sur le web</p>
-                    <p class="text-4xl font-bold mb-6">100€</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>1 page unique (présentation + contact)</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Design personnalisé</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Formulaire de contact</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation mobile</span></li>
-                    </ul>
-                    <a href="offre-essentiel.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
-                </div>
-            </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-feather="calendar" class="text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Réservation en ligne</h3>
+          <p class="text-gray-600">Permettez à vos clients de prendre rendez-vous directement sur votre site.</p>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-12 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">Nos Réalisations</h2>
-            <p class="text-xl text-center text-gray-600 mb-12">Découvrez quelques exemples de sites web conçus pour différents métiers.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
-                    <img src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image%20menuisier.jpg" alt="Site web artisan menuisier" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Artisan menuisier</h3>
-                        <h4 class="text-sm text-gray-500 mb-2">Formule Premium</h4>
-                        <p class="text-gray-600 mb-4">Présentation des services et demande d'intervention.</p>
-                        <a href="artisan-menuisier.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
-                    <img src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image%20coach%20sportif.jpg" alt="Site web coach sportif" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Coach sportif</h3>
-                        <p class="text-sm text-gray-500 mb-2">Formule Pro</p>
-                        <p class="text-gray-600 mb-4">Présentation des services et formulaire de contact.</p>
-                        <a href="coach-sportif.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
-                    <img src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image_2025-10-21_173209076.png" alt="Site web restaurant" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Restaurant local</h3>
-                        <h4 class="text-sm text-gray-500 mb-2">Formule essentiel</h4>
-                        <p class="text-gray-600 mb-4">Menu en ligne et réservation de tables</p>
-                        <a href="restaurant-local.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-feather="edit" class="text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Sites sur mesure</h3>
+          <p class="text-gray-600">Des solutions personnalisées adaptées à vos besoins spécifiques.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <custom-footer></custom-footer>
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-12 bg-gray-50 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-4">Nos formules de création de site web</h2>
+      <p class="text-xl text-center text-gray-600 mb-12">Choisissez la formule qui correspond à vos besoins et bénéficiez
+        d'un site moderne, rapide et personnalisé.</p>
+      <div class="grid md:grid-cols-3 gap-8">
 
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
+        <!-- Formule Premium -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent transform scale-105 relative">
+          <div
+            class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg font-medium">Populaire
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Formule Premium</h3>
+          <p class="text-gray-600 mb-4">Le site professionnel haut de gamme</p>
+          <p class="text-4xl font-bold mb-6">200€</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>5 pages ou
+                plus</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Système de
+                réservation avancé</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation SEO
+                basique</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Configuration du
+                domaine</span></li>
+          </ul>
+          <a
+            href="https://cuenotjulesb.github.io/JC-web-studio/offre-premium.html"
+            class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
+        </div>
+
+        <!-- Formule Pro -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
+          <h3 class="text-2xl font-bold mb-2">Formule Pro</h3>
+          <p class="text-gray-600 mb-4">Le site complet et évolutif pour professionnels</p>
+          <p class="text-4xl font-bold mb-6">150€</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Jusqu'à 3
+                pages</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Mise en page
+                dynamique</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Formulaire de
+                réservation</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation
+                SEO</span></li>
+          </ul>
+          <a
+            href="https://cuenotjulesb.github.io/JC-web-studio/offre-pro.html"
+            class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
+        </div>
+
+        <!-- Formule Essentiel -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
+          <h3 class="text-2xl font-bold mb-2">Formule Essentiel</h3>
+          <p class="text-gray-600 mb-4">Le site simple et efficace pour une présence rapide sur le web</p>
+          <p class="text-4xl font-bold mb-6">100€</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>1 page unique
+                (présentation + contact)</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Design
+                personnalisé</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Formulaire de
+                contact</span></li>
+            <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i><span>Optimisation
+                mobile</span></li>
+          </ul>
+          <a
+            href="https://cuenotjulesb.github.io/JC-web-studio/offre-essentiel.html"
+            class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-12 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-4">Nos Réalisations</h2>
+      <p class="text-xl text-center text-gray-600 mb-12">Découvrez quelques exemples de sites web conçus pour différents
+        métiers.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
+          <img
+            src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image%20menuisier.jpg"
+            alt="Site web artisan menuisier" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Artisan menuisier</h3>
+            <h4 class="text-sm text-gray-500 mb-2">Formule Premium</h4>
+            <p class="text-gray-600 mb-4">Présentation des services et demande d'intervention.</p>
+            <a
+              href="https://cuenotjulesb.github.io/JC-web-studio/artisan-menuisier.html"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
+          <img
+            src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image%20coach%20sportif.jpg"
+            alt="Site web coach sportif" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Coach sportif</h3>
+            <p class="text-sm text-gray-500 mb-2">Formule Pro</p>
+            <p class="text-gray-600 mb-4">Présentation des services et formulaire de contact.</p>
+            <a
+              href="https://cuenotjulesb.github.io/JC-web-studio/coach-sportif.html"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
+          <img
+            src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image_2025-10-21_173209076.png"
+            alt="Site web restaurant" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Restaurant local</h3>
+            <h4 class="text-sm text-gray-500 mb-2">Formule Essentiel</h4>
+            <p class="text-gray-600 mb-4">Menu en ligne et réservation de tables</p>
+            <a
+              href="https://cuenotjulesb.github.io/JC-web-studio/restaurant-local.html"
+              class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Voir la démo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <custom-footer></custom-footer>
+
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="script.js"></script>
+  <script>feather.replace();</script>
 </body>
 </html>
