@@ -17,7 +17,7 @@
     <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4 md:px-0">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ton entreprises mérite un vrai site, pas un simple lien.</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ton business mérite un vrai site, pas un simple lien.</h1>
                 <p class="text-xl mb-8">Des sites rapides, modernes et abordables, livrés en quelques jours.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium text-center transition">Demander un devis gratuit</a>
@@ -68,8 +68,7 @@
             <h2 class="text-3xl font-bold text-center mb-4">Nos formules de création de site web</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Choisissez la formule qui correspond à vos besoins et bénéficiez d'un site moderne, rapide et personnalisé.</p>
             <div class="grid md:grid-cols-3 gap-8">
-
-                <!-- Formule Premium -->
+                <!-- Premium -->
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent transform scale-105 relative">
                     <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg font-medium">Populaire</div>
                     <h3 class="text-2xl font-bold mb-2">Formule Premium</h3>
@@ -84,7 +83,7 @@
                     <a href="offre-premium.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
                 </div>
 
-                <!-- Formule Pro -->
+                <!-- Pro -->
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
                     <h3 class="text-2xl font-bold mb-2">Formule Pro</h3>
                     <p class="text-gray-600 mb-4">Le site complet et évolutif pour professionnels</p>
@@ -98,7 +97,7 @@
                     <a href="offre-pro.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
                 </div>
 
-                <!-- Formule Essentiel -->
+                <!-- Essentiel -->
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:border-blue-600 border-2 border-transparent">
                     <h3 class="text-2xl font-bold mb-2">Formule Essentiel</h3>
                     <p class="text-gray-600 mb-4">Le site simple et efficace pour une présence rapide sur le web</p>
@@ -111,7 +110,6 @@
                     </ul>
                     <a href="offre-essentiel.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition">Voir les détails</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -121,7 +119,6 @@
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">Nos Réalisations</h2>
             <p class="text-xl text-center text-gray-600 mb-12">Découvrez quelques exemples de sites web conçus pour différents métiers.</p>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:scale-105 overflow-hidden">
                     <img src="https://huggingface.co/spaces/cuenot/webwiz-studio/resolve/main/images/image%20menuisier.jpg" alt="Site web artisan menuisier" class="w-full h-48 object-cover">
@@ -156,31 +153,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-12 bg-gray-50 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Questions fréquentes</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Combien de temps faut-il pour créer un site ?</h3>
-                    <p class="text-gray-600">La plupart des sites sont prêts en 48 à 72 heures, selon la personnalisation.</p>
-                </div>
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Est-ce que je dois savoir coder ?</h3>
-                    <p class="text-gray-600">Non, absolument pas ! Je m'occupe de tout.</p>
-                </div>
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Le site m'appartient-il vraiment après la création ?</h3>
-                    <p class="text-gray-600">Oui, une fois livré, il vous appartient à 100%.</p>
-                </div>
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold mb-2">Et si je veux modifier mon site plus tard ?</h3>
-                    <p class="text-gray-600">Vous pouvez le faire vous-même ou me le confier.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-12 px-4">
         <div class="container mx-auto">
@@ -206,14 +178,14 @@
                         </a>
                     </div>
                     <div class="md:w-1/2 p-8">
-                        <form class="space-y-6" action="https://formspree.io/f/xknlqbqg" method="POST">
+                        <form id="contact-form" class="space-y-6" action="https://formspree.io/f/xovpjjea" method="POST">
                             <div>
                                 <label for="name" class="block mb-2 font-medium">Votre nom</label>
                                 <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                             </div>
                             <div>
                                 <label for="email" class="block mb-2 font-medium">Votre email</label>
-                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <input type="email" id="email" name="_replyto" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                             </div>
                             <div>
                                 <label for="message" class="block mb-2 font-medium">Votre message</label>
@@ -222,6 +194,9 @@
                             <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition">
                                 Envoyer la demande
                             </button>
+                            <p id="form-status" class="text-center text-green-600 mt-4 hidden">
+                                Merci pour votre message ! Nous vous répondrons bientôt.
+                            </p>
                         </form>
                     </div>
                 </div>
@@ -234,6 +209,31 @@
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
     <script src="script.js"></script>
-    <script>feather.replace();</script>
+    <script>
+        feather.replace();
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const data = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+            if (response.ok) {
+                form.reset();
+                status.classList.remove('hidden');
+                status.style.color = 'green';
+                status.textContent = 'Merci pour votre message ! Nous vous répondrons bientôt.';
+            } else {
+                status.classList.remove('hidden');
+                status.style.color = 'red';
+                status.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+            }
+        });
+    </script>
 </body>
 </html>
